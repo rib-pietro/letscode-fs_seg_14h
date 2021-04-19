@@ -31,7 +31,7 @@ def hello_to(name):
     return f"<h1>Hello, {name}</h1>" # "<h1>Hello, " + name + "</h1>" 
     # return "<h1>Hello, {}</h1>".format(name)
 
-@route('/pessoas/<url_pessoa:int>')
+@route('/pessoas/<url_pessoa:re>')
 def get_pessoa(url_pessoa):
     ind = -1
 
