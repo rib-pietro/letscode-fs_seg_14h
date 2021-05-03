@@ -1,6 +1,11 @@
 # import bottle as b
 from bottle import *
 
+tarefas = [
+    'Molhar as plantas',
+
+]
+
 pessoas = [
     {
         "id": 1,
@@ -66,6 +71,8 @@ def cadastrar_pessoa():
     nova_pessoa['visualizacoes'] = 0
 
     pessoas.append(nova_pessoa)
+
+    print(tarefas)
 
     return "Nova pessoa cadastrada!"
 
